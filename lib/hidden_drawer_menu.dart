@@ -45,7 +45,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           name: 'abaout',
           baseStyle: TextStyle(),
           selectedStyle: TextStyle(),
-          colorLineSelected 
+          
         ),
         HomePage(),
       )
@@ -58,8 +58,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
       screens: _pages,
       backgroundColorMenu: Colors.deepPurple,
       initPositionSelected: 0,
-      slidePercent
-      contentCornerRadius
+      
     );
   }
 }
