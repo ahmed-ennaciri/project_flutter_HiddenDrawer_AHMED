@@ -45,7 +45,6 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           name: 'abaout',
           baseStyle: TextStyle(),
           selectedStyle: TextStyle(),
-          
         ),
         HomePage(),
       )
