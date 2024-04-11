@@ -58,7 +58,6 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
       screens: _pages,
       backgroundColorMenu: Colors.deepPurple,
       initPositionSelected: 0,
-      
     );
   }
 }
