@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_flutter/hidden_drawer_menu.dart';
+import 'package:project_flutter/screens/notes_screen.dart';
 
 void main() {
   runApp(const MyApp());
