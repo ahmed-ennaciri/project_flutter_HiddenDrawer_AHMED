@@ -27,7 +27,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
     _pages = [
       ScreenHiddenDrawer(
         ItemHiddenMenu(
-          name: 'Homepage',
+          name: 'Devoirs',
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
@@ -36,7 +36,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
-          name: 'Settings',
+          name: 'Examens',
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
@@ -44,8 +44,16 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
-          name: 'about',
-          baseStyle: TextStyle(),
+          name: 'Projets',
+          baseStyle: myTextStyle,
+          selectedStyle: TextStyle(),
+        ),
+        HomePage(),
+      ),
+      ScreenHiddenDrawer(
+        ItemHiddenMenu(
+          name: 'Parascolaires',
+          baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
         HomePage(),
