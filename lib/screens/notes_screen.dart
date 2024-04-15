@@ -16,7 +16,7 @@ class _NotesScreenState extends State<NotesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[200],
+        backgroundColor: Color.fromARGB(255, 156, 104, 246),
         
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
