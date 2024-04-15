@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:project_flutter/models/note_model.dart';
-import 'package:project_flutter/services/database_helper.dart';
+import 'package:project_flutter/models/parascolaires_model.dart'; // Importe le modèle d'activité parascolaire
+import 'package:project_flutter/services/database_parascolaires.dart'; // Importe le helper de la base de données
 
-class NoteScreen extends StatelessWidget {
-  final Note? note;
+class ParascolaireScreen extends StatelessWidget {
+  final Parascolaire? parascolaire;
 
-  const NoteScreen({
+  const ParascolaireScreen({
     Key? key,
-    this.note,
+    this.parascolaire,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final titleController = TextEditingController(text: note?.title);
+    final titleController = TextEditingController(text: parascolaire?.title);
     final descriptionController =
-        TextEditingController(text: note?.description);
+        TextEditingController(text: parascolaire?.description);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(note == null ? 'Add a devoir' : 'Edit devoir'),
+        title: Text(parascolaire == null ? 'Add a parascolaire activity' : 'Edit parascolaire activity'),
         centerTitle: true,
       ),
       body: Padding(
@@ -27,7 +27,7 @@ class NoteScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'What are you thinking about?',
+              'What are you planning for the activity?',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20.0),
@@ -35,7 +35,7 @@ class NoteScreen extends StatelessWidget {
               controller: titleController,
               decoration: const InputDecoration(
                 hintText: 'Title',
-                labelText: 'Note title',
+                labelText: 'Activity title',
                 border: OutlineInputBorder(),
               ),
               maxLines: 1,
@@ -44,8 +44,8 @@ class NoteScreen extends StatelessWidget {
             TextFormField(
               controller: descriptionController,
               decoration: const InputDecoration(
-                hintText: 'Type here the devoir',
-                labelText: 'devoir description',
+                hintText: 'Type here the activity details',
+                labelText: 'Activity description',
                 border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.multiline,
@@ -63,21 +63,21 @@ class NoteScreen extends StatelessWidget {
                     return;
                   }
 
-                  final Note model = Note(
+                  final Parascolaire model = Parascolaire(
                     title: title,
                     description: description,
-                    id: note?.id,
+                    id: parascolaire?.id,
                   );
 
-                  if (note == null) {
-                    await DatabaseHelper.addNote(model);
+                  if (parascolaire == null) {
+                    await DatabaseHelper.addParascolaire(model);
                   } else {
-                    await DatabaseHelper.updateNote(model);
+                    await DatabaseHelper.updateParascolaire(model);
                   }
 
                   Navigator.pop(context);
                 },
-                child: Text(note == null ? 'Save' : 'Edit'),
+                child: Text(parascolaire == null ? 'Save' : 'Edit'),
               ),
             ),
           ],

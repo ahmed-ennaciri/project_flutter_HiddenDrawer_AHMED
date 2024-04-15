@@ -53,7 +53,7 @@ class _NotesScreenState extends State<NotesScreen> {
                           builder: (context) {
                             return AlertDialog(
                               title: const Text(
-                                  'Are you sure you want to delete this note?'),
+                                  'Are you sure you want to delete this devoir?'),
                               actions: [
                                 ElevatedButton(
                                   style: ButtonStyle(

@@ -4,6 +4,9 @@ import 'package:project_flutter/pages/home_page.dart';
 import 'package:project_flutter/pages/settings_page.dart';
 import 'package:project_flutter/screens/notes_screen.dart';
 import 'package:project_flutter/screens/examens.dart';
+import 'package:project_flutter/screens/parascolaire.dart';
+import 'package:project_flutter/screens/parascolaires.dart';
+import 'package:project_flutter/screens/projets.dart';
 
 class HiddenDrawer extends StatefulWidget {
   const HiddenDrawer({super.key});
@@ -48,7 +51,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
-        HomePage(),
+        ProjetsScreen(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
@@ -56,7 +59,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
-        HomePage(),
+        ParascolairesScreen(),
       )
     ];
   }

@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:project_flutter/models/note_model.dart';
-import 'package:project_flutter/services/database_helper.dart';
+import 'package:project_flutter/models/projets_model.dart'; // Importe le modèle de projet
+import 'package:project_flutter/services/database_projets.dart'; // Importe le helper de la base de données
 
-class NoteScreen extends StatelessWidget {
-  final Note? note;
+class ProjetScreen extends StatelessWidget {
+  final Projet? projet;
 
-  const NoteScreen({
+  const ProjetScreen({
     Key? key,
-    this.note,
+    this.projet,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final titleController = TextEditingController(text: note?.title);
+    final titleController = TextEditingController(text: projet?.title);
     final descriptionController =
-        TextEditingController(text: note?.description);
+        TextEditingController(text: projet?.description);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(note == null ? 'Add a devoir' : 'Edit devoir'),
+        title: Text(projet == null ? 'Add a project' : 'Edit project'),
         centerTitle: true,
       ),
       body: Padding(
@@ -35,7 +35,7 @@ class NoteScreen extends StatelessWidget {
               controller: titleController,
               decoration: const InputDecoration(
                 hintText: 'Title',
-                labelText: 'Note title',
+                labelText: 'Project title',
                 border: OutlineInputBorder(),
               ),
               maxLines: 1,
@@ -44,8 +44,8 @@ class NoteScreen extends StatelessWidget {
             TextFormField(
               controller: descriptionController,
               decoration: const InputDecoration(
-                hintText: 'Type here the devoir',
-                labelText: 'devoir description',
+                hintText: 'Type here the project',
+                labelText: 'Project description',
                 border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.multiline,
@@ -63,21 +63,21 @@ class NoteScreen extends StatelessWidget {
                     return;
                   }
 
-                  final Note model = Note(
+                  final Projet model = Projet(
                     title: title,
                     description: description,
-                    id: note?.id,
+                    id: projet?.id,
                   );
 
-                  if (note == null) {
-                    await DatabaseHelper.addNote(model);
+                  if (projet == null) {
+                    await DatabaseHelper.addProjet(model);
                   } else {
-                    await DatabaseHelper.updateNote(model);
+                    await DatabaseHelper.updateProjet(model);
                   }
 
                   Navigator.pop(context);
                 },
-                child: Text(note == null ? 'Save' : 'Edit'),
+                child: Text(projet == null ? 'Save' : 'Edit'),
               ),
             ),
           ],
