@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
-import 'package:project_flutter/pages/home_page.dart';
-import 'package:project_flutter/pages/settings_page.dart';
+
 import 'package:project_flutter/screens/notes_screen.dart';
 import 'package:project_flutter/screens/examens.dart';
-import 'package:project_flutter/screens/parascolaire.dart';
 import 'package:project_flutter/screens/parascolaires.dart';
 import 'package:project_flutter/screens/projets.dart';
 

@@ -8,9 +8,129 @@
       "line": 12
     },
     {
-      "file": "lib/main.dart",
-      "description": "the package for hidden drawer \r\n",
-      "line": 2
+      "file": "lib/services/database_helper.dart",
+      "description": "get database",
+      "line": 9
+    },
+    {
+      "file": "lib/services/database_helper.dart",
+      "description": "adding data base to the base",
+      "line": 16
+    },
+    {
+      "file": "lib/services/database_helper.dart",
+      "description": "update les donnes",
+      "line": 22
+    },
+    {
+      "file": "lib/services/database_helper.dart",
+      "description": "fonction pour delete les donnes frome the base donnes ",
+      "line": 30
+    },
+    {
+      "file": "lib/services/database_helper.dart",
+      "description": "afficher all the devoire in the base donnes",
+      "line": 39
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "this is the NOtesScreeen qui afficher le page de devoir",
+      "line": 8
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "class pour les devoires ",
+      "line": 8
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "scafold",
+      "line": 18
+    },
+    {
+      "file": "lib/screens/note_screen.dart",
+      "description": "title de la page dans app bar qui also change if add sill nexicte pas et edit sill exicte",
+      "line": 21
+    },
+    {
+      "file": "lib/screens/note_screen.dart",
+      "description": "save sill nexicte pas et update sill exicte",
+      "line": 72
+    },
+    {
+      "file": "lib/widgets/examens_widget.dart",
+      "description": "class pour le widget qui affiche le cadre dans le quelle le devoir afficher ",
+      "line": 4
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "hiddenDrawer class ",
+      "line": 9
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "pour appeles les pages",
+      "line": 17
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "les pages pour declarer",
+      "line": 29
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "appele le texte style",
+      "line": 33
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "here the texte style ",
+      "line": 19
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "appeler le screen ou la page NotesScreen()",
+      "line": 36
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "appeles la page examens",
+      "line": 44
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "appeles la page projets",
+      "line": 52
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "appele la page parascolaire",
+      "line": 60
+    },
+    {
+      "file": "lib/hidden_drawer_menu.dart",
+      "description": "affichage de drawer aves le style",
+      "line": 66
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "button pour add les devoir",
+      "line": 21
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "here afficher les devoire",
+      "line": 29
+    },
+    {
+      "file": "lib/screens/notes_screen.dart",
+      "description": "here pour supr les devoire en fonction long presss",
+      "line": 50
+    },
+    {
+      "file": "lib/screens/note_screen.dart",
+      "description": "scafold la page pour ajouter les devoire",
+      "line": 19
     },
     {
       "file": "lib/models/note_model.dart",
@@ -31,6 +151,26 @@
       "file": "lib/models/note_model.dart",
       "description": "Create a Note object from JSON",
       "line": 14
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "pour le yaml en ajoute environement",
+      "line": 21
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "et en ajoute sqflite manuelle et avec le commande flutter pub add sqflite",
+      "line": 38
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "et le hidden drawer pour limportation",
+      "line": 39
+    },
+    {
+      "file": "lib/main.dart",
+      "description": "the package for hidden drawer \r\n",
+      "line": 2
     }
   ],
   "ref": "test-for-drawwwer"
