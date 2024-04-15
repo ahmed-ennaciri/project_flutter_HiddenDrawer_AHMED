@@ -17,17 +17,21 @@ class _ExamensScreenState extends State<ExamensScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Color.fromARGB(255, 61, 166, 236),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const ExamenScreen()), // Remplace "NoteScreen" par "ExamenScreen"
+            MaterialPageRoute(
+                builder: (context) =>
+                    const ExamenScreen()), // Remplace "NoteScreen" par "ExamenScreen"
           );
           setState(() {});
         },
+        backgroundColor: Color.fromARGB(255, 241, 244, 244), // Set the background color here
         child: const Icon(Icons.add),
       ),
+
       body: FutureBuilder<List<Examen>?>(
         future: DatabaseHelper.getAllExams(), // Remplace "getAllNotes" par "getAllExams"
         builder: (context, AsyncSnapshot<List<Examen>?> snapshot) {

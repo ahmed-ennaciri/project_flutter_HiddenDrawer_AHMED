@@ -31,7 +31,7 @@ class ExamenWidget extends StatelessWidget { // Remplace "NoteWidget" par "Exame
                   child: Text(
                     examen.title, // Remplace "note.title" par "examen.title"
                     style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 19,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
