@@ -1,0 +1,37 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "main",
+  "steps": [
+    {
+      "file": "lib/main.dart",
+      "description": "this code sets up a simple Flutter application with Material Design, a primary color of deep purple, and a custom home screen represented by the HiddenDrawer widget.\r\n\r\n\r\n\r\n",
+      "line": 12
+    },
+    {
+      "file": "lib/main.dart",
+      "description": "the package for hidden drawer \r\n",
+      "line": 2
+    },
+    {
+      "file": "lib/models/note_model.dart",
+      "description": "class difinition\r\n",
+      "line": 1
+    },
+    {
+      "file": "lib/models/note_model.dart",
+      "description": "constructor",
+      "line": 6
+    },
+    {
+      "file": "lib/models/note_model.dart",
+      "description": "Convert Note object to JSON",
+      "line": 8
+    },
+    {
+      "file": "lib/models/note_model.dart",
+      "description": "Create a Note object from JSON",
+      "line": 14
+    }
+  ],
+  "ref": "test-for-drawwwer"
+}

@@ -3,6 +3,7 @@ import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 import 'package:project_flutter/pages/home_page.dart';
 import 'package:project_flutter/pages/settings_page.dart';
 import 'package:project_flutter/screens/notes_screen.dart';
+import 'package:project_flutter/screens/examens.dart';
 
 class HiddenDrawer extends StatefulWidget {
   const HiddenDrawer({super.key});
@@ -31,7 +32,6 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
-       
         NotesScreen(),
       ),
       ScreenHiddenDrawer(
@@ -40,7 +40,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: TextStyle(),
         ),
-        SettingsPage(),
+        ExamensScreen(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
