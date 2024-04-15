@@ -20,7 +20,7 @@ class ParascolaireScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(parascolaire == null ? 'Add a parascolaire activity' : 'Edit parascolaire activity'),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 77, 240, 94)
+        backgroundColor: const Color.fromARGB(255, 112, 74, 177),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

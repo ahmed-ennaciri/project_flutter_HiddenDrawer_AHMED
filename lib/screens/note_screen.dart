@@ -20,7 +20,7 @@ class NoteScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(note == null ? 'Add a devoir' : 'Edit devoir'),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 166, 118, 247),
+        backgroundColor: const Color.fromARGB(255, 119, 81, 184),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

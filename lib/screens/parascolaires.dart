@@ -15,7 +15,7 @@ class _ParascolairesScreenState extends State<ParascolairesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 77, 240, 94),
+      backgroundColor: const Color.fromARGB(255, 111, 70, 181),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await Navigator.push(

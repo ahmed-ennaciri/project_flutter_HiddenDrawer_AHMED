@@ -16,7 +16,7 @@ class _ProjetsScreenState extends State<ProjetsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color.fromARGB(255, 239, 225, 92),
+      backgroundColor:const Color.fromARGB(255, 108, 66, 182),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await Navigator.push(

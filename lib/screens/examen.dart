@@ -19,7 +19,7 @@ class ExamenScreen extends StatelessWidget { // Remplace "NoteScreen" par "Exame
       appBar: AppBar(
         title: Text(examen == null ? 'Add an exam' : 'Edit exam'), // Remplace "Add a note" par "Add an exam" et "Edit note" par "Edit exam"
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 0, 152, 247),
+        backgroundColor: const Color.fromARGB(255, 114, 78, 176),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

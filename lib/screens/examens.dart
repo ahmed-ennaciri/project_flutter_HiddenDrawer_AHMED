@@ -17,7 +17,7 @@ class _ExamensScreenState extends State<ExamensScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 61, 166, 236),
+      backgroundColor: const Color.fromARGB(255, 112, 74, 179),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await Navigator.push(

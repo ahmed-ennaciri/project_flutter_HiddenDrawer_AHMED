@@ -20,7 +20,7 @@ class ProjetScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(projet == null ? 'Add a project' : 'Edit project'),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 239, 225, 92),
+        backgroundColor: const Color.fromARGB(255, 109, 70, 178),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

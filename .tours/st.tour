@@ -1,0 +1,25 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "st",
+  "steps": [
+    {
+      "title": "step",
+      "description": ""
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "luncher icone pour adding licone",
+      "line": 45
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "te rename the app commande :flutter pub run rename_app:main all=\"ahmed\"",
+      "line": 40
+    },
+    {
+      "file": "pubspec.yaml",
+      "description": "this also for  luncher icons the commande :flutter pub run flutter_launcher_icons  ",
+      "line": 55
+    }
+  ]
+}
